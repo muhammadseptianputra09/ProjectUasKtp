@@ -21,7 +21,7 @@ public class DummyController {
     DummyJpaController dummyController = new DummyJpaController();
     List<Dummy> data = new ArrayList<>();
 
-    @RequestMapping("/create")
+    @RequestMapping("/create ")
     @ResponseBody
     public List<Dummy> getDummy(){
         try {
