@@ -29,14 +29,14 @@ public class DataController {
     }
     
     @RequestMapping("/data")
-    public List<Data> getDataKTP(Model model){
+    public String getDataKTP(Model model){
         
         try 
         {newdata = datactrl.findDataEntities(0, 1);
         }
         catch (Exception e){}
         model.addAttribute("goData", newdata);
-        return newdata;
+        return "database";
         
     }
     
